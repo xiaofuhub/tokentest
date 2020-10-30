@@ -22,9 +22,11 @@ boolean nativepdfvalid = false
 boolean nativepdfincludecustomfont = false
 string nativepdfappname = ""
 long richtextedittype = 2
+long richtexteditx64type = 3
 long richtexteditversion = 1
 string richtexteditkey = ""
 string appicon = "png\echarts.ico"
+string fullbuildruntimeversion = ""
 end type
 global mdiapp mdiapp
 
@@ -46,7 +48,7 @@ destroy(message)
 end on
 
 event open;//////
-// Profile PB Demo DB V2019R3
+// Profile PB Demo DB V2019R300
 SQLCA.DBMS = "ODBC"
 SQLCA.AutoCommit = False
 SQLCA.DBParm = "ConnectString='DSN=PB Demo DB V2019R3;UID=dba;PWD=sql'"
